@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+ }
+ 
+ header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+ }
+ 
+ nav .logo {
+    font-size: 24px;
+ }
+ 
+ nav .nav-links {
+    list-style: none;
+    display: flex;
+ }
+ 
+ nav .nav-links li {
+    margin: 0 15px;
+ }
+ 
+ nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ 
+ section {
+    padding: 60px 20px;
+    margin-top: 60px;
+ }
+ 
+ #home {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 100px 20px;
+ }
+ 
+ #home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+ }
+ 
+ #about, #projects, #contact {
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ #projects .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+ 
+ .project-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+ }
+ 
+ footer {
+    text-align: center;
+    padding: 20px;
+    background: #333333;
+    color: #fff;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+ 
+    nav.active .nav-links {
+        display: flex;
+    }
+ 
+    #projects .project-grid {
+        flex-direction: column;
+    }
+ 
+    .project-card {
+        flex: 1 1 100%;
+    }
+ }
+ 
+ @media (max-width: 500px) {
+    #home h1 {
+        font-size: 32px;
+    }
+ 
+    nav .logo {
+        font-size: 20px;
+    }
+ 
+    nav .nav-links a {
+        font-size: 16px;
+    }
+ }
